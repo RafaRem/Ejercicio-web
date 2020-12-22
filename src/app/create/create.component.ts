@@ -63,10 +63,9 @@ export class CreateComponent implements OnInit {
           'codigopostal':this.userForm.value.codigopostal,
           'telefono':this.userForm.value.telefono,
           'rfc':this.userForm.value.rfc,
-          'estado':'e'
-          
+          'estado':'e'        
         }
-      
+  
       this.prospectoService.createProspecto(prospecto)  
       .then((res) =>{
         let formData  = new FormData();
