@@ -49,7 +49,7 @@ export class CreateComponent implements OnInit {
   saveUser() {
     var rfc_existe:any;
     rfc_existe = this.search(this.userForm.value.rfc.toLowerCase());
-    console.log(rfc_existe.length) 
+    
     if(rfc_existe.length<=0){
       
       if (this.userForm.dirty && this.userForm.valid) {
@@ -84,7 +84,7 @@ export class CreateComponent implements OnInit {
         alert("algo salio mal por favor intentelo nuevamente")
       } 
       );
-        console.log(prospecto)
+      
       }
     }else{
       alert('El RFC que intenta registar ya existe en nuestra base de datos')
@@ -94,7 +94,7 @@ export class CreateComponent implements OnInit {
 
   LoadFile(event){
     this.file = event.target.files[0];
-    console.log(this.file);
+   
   }
 
 }

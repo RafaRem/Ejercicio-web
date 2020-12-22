@@ -20,7 +20,7 @@ export class DetallesComponent implements OnInit {
     this.getProspecto(this.id);
   }
   getProspecto(id:any){
-    console.log(id);
+    
     this.prospectoService.getProspecto(id)
     .then(prospecto=>{
       this.prospecto = prospecto[0];

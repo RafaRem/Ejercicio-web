@@ -20,7 +20,7 @@ export class InicioComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    console.log("holiwis")
+    
     this.getAllProspectos();
   }
 
@@ -31,7 +31,7 @@ export class InicioComponent implements OnInit {
       this.allprospectos = this.allprospectos;
       this.arrProspectos=this.allprospectos
       this.respaldo =this.allprospectos
-      console.log(this.allprospectos);
+      
     });
 
   }
@@ -41,7 +41,7 @@ export class InicioComponent implements OnInit {
    
     list=this.arrProspectos
     if(this.textoDeInput==""){
-      console.log("entre")
+  
       this.allprospectos=this.arrProspectos
     }
     let filterValueLower = this.textoDeInput.toLowerCase()
@@ -58,7 +58,7 @@ export class InicioComponent implements OnInit {
 
   textObservacion(observacion:any){
      this.observacin = observacion
-     console.log(this.observacin)
+    
   }
   
 }
