@@ -46,10 +46,8 @@ export class InicioComponent implements OnInit {
     }
     let filterValueLower = this.textoDeInput.toLowerCase()
     this.allprospectos = this.search(filterValueLower); 
-    //this.allprospectos = list.find((item) => item.nombre.includes(filterValueLower) || item.apaterno.toLowerCase().includes(filterValueLower) || item.amaterno.toLowerCase().includes(filterValueLower));
-    /*let filterValueLower = this.textoDeInput.toLowerCase();
-    this.allprospectos = this.allprospectos.filter((item) => item.nombre.includes(filterValueLower) || item.apaterno.toLowerCase().includes(filterValueLower) || item.amaterno.toLowerCase().includes(filterValueLower));
-  */}
+   
+  }
   
  
   detallesProspecto(IdProspecto:any){
